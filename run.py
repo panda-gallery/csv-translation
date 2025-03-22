@@ -8,7 +8,7 @@ import re
 
 # 配置信息
 CONFIG = {
-    "api_key": "",  # 替换为你的API Key
+    "api_key": "API_KEY",  # 替换为你的API Key
     "input_folder": "input",  # 输入文件夹
     "output_folder": "output",  # 输出文件夹
     "max_workers": 8,  # 最大线程数
