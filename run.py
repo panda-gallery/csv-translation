@@ -35,7 +35,8 @@ class CSVTranslator:
         context = f'请将以下内容准确翻译为中文，保持格式不变：\n{text}'
         try:
             response = self.client.chat.completions.create(
-                # 免费模型有：glm-4-flash, glm-4v-flash (截止至 2025/3/22
+                # 免费模型有：glm-4-flash, glm-4v-flash
+                # (截止至 2025/3/22
                 model="glm-4v-flash",
                 messages=[
                     {"role": "user", "content": context},
